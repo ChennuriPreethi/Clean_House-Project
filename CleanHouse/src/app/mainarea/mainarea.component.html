@@ -1,0 +1,188 @@
+<div class="about-us">
+    <div class="clean">
+        <div class="row">
+            <div class="col-md-6 about" style="text-align :center;margin-top :30px;">
+                <h5>About Company</h5>
+                <h2>One Stop Commercial Cleaning Company</h2>
+                <p>
+                    Gathering dry make rule likeness heaven a divide.
+                    From you will bearing multiply over after forth firmament give unto,
+                    a seed moveth male lights is earth yielding creeping him doesn't herb all good above won't
+                    was and also Won't Forth made, creepeth, and said fifth greater rule, saw bring also
+                </p>
+                <h4 class="title">
+                    <span>25</span>
+                    <br>
+                    Years of <br> Experience
+                </h4>
+                <p>
+                    Bring the drys make rule likeness heaven a divide from you'll bearing multiply image
+                    and after fored firmament give unto a seed moveth male lights is earth yielding creeping
+                    him does on herb all good above won a seed moveth male lights is earth yielding creeping him
+                    doesn't herb all good above won't
+                    was and also Won't Forth.
+                </p>
+            </div>
+            <div class="col-md-6 about-img">
+                <img src="../../assets/Images/gif1.gif" class="rounded-circle img-fluid" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="service-area bg-fefbf3">
+    <div class="container">
+        <div class="section-title">
+            <h5>Our Services</h5>
+            <h2>
+                We Work Many Fields to Clean Your Surrounding Area
+            </h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Living Room.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Make Better <span>Living Room</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Kitchen.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Your Beautiful <span>Kitchen</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Bathroom.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Tidy <span>Bathroom</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Bedroom.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">The Perfect <span>Bedroom</span></a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid rounded mt-5 mb-5 book-us">
+    
+    <div class="row">
+        <div class="col-md-5 ">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5 book-img">
+                <img class="rounded-circle mt-5" src="../../assets/Images/12.png">
+            </div>
+        </div>
+        <div class="col-md-7 book-box">
+            <div class="p-3 py-5">
+                <div class="book-title">
+                    <h1>Book Us</h1>
+                    <hr>
+                </div>
+                <h5>Contact Details</h5>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label class="labels">Name</label>
+                        <input type="text" class="form-control" placeholder="Name" value="">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="labels">Email ID</label>
+                        <input type="text" class="form-control" value="" placeholder="Email ID">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label class="labels">Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Enter phone number" value="">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="labels">Address</label>
+                        <input type="text" class="form-control" placeholder="Enter address" value="">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label class="labels">Zipcode</label>
+                        <input type="text" class="form-control" placeholder="Enter Zipcode" value="">
+                    </div>
+                </div>
+                <div>
+                    <h5>Tell Us About Your Home!</h5>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Type of Service</label>
+                            <select class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="s1" >
+                                <option value="0">-- Select Service --</option>
+                                <option *ngFor="let ch of services?.services" [value]="ch.id">{{ch.Name}}</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Rooms</label>
+                            <input type="number" class="form-control" placeholder="Rooms" value="">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Square Feet</label>
+                            <input type="number" class="form-control" placeholder="Square Feet" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Book on</label>
+                            <input type="date" class="form-control" value="" placeholder="Book on">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Standard Charges</label>
+                            <input type="text" class="form-control"  placeholder="Standard Charges" *ngFor="let charge of charges" [value]="charge.Price" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Total Price</label>
+                            <input type="text" class="form-control" value="" placeholder="Total Price" readonly>
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <button class="btn btn-primary s-button" type="button">Save</button>
+                        <button class="btn btn-primary s-button" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="contact">
+    <div class="top-border left"></div>
+    <div class="top-border right"></div>
+    <h1>CONTACT US</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      
+  </div>
