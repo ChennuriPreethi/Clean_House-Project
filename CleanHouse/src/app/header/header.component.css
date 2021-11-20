@@ -1,0 +1,28 @@
+.navbar{
+    background-color:rgba(37,67,95,255);
+}
+
+.collapse a{
+    color: white;
+    font-size: 20px;
+}
+
+
+.container1{
+    /* background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../assets/Images/52055.jpg); */
+    background-attachment: fixed;
+    background-size:cover;
+    min-height: 100vh;
+    font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width:990px) {
+    .container1 {
+        /* background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../assets/Images/52055.jpg); */
+        background-attachment: fixed;
+        background-size:cover;
+        min-height: 40vh;
+        min-width: 100%;
+        margin-top: 9%;
+    }
+}
