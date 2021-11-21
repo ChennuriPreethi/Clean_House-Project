@@ -1,0 +1,305 @@
+<div id="aboutUs" class="about-us">
+    <div class="clean">
+        <div class="row">
+            <div class="col-md-6 about" style="text-align :center;margin-top :30px;">
+                <h5>About Company</h5>
+                <h2>One Stop Commercial Cleaning Company</h2>
+                <p>
+                    Gathering dry make rule likeness heaven a divide.
+                    From you will bearing multiply over after forth firmament give unto,
+                    a seed moveth male lights is earth yielding creeping him doesn't herb all good above won't
+                    was and also Won't Forth made, creepeth, and said fifth greater rule, saw bring also
+                </p>
+                <h4 class="title">
+                    <span>25</span>
+                    <br>
+                    Years of <br> Experience
+                </h4>
+                <p>
+                    Bring the drys make rule likeness heaven a divide from you'll bearing multiply image
+                    and after fored firmament give unto a seed moveth male lights is earth yielding creeping
+                    him does on herb all good above won a seed moveth male lights is earth yielding creeping him
+                    doesn't herb all good above won't
+                    was and also Won't Forth.
+                </p>
+            </div>
+            <div class="col-md-6 about-img">
+                <img src="../../assets/Images/gif1.gif" class="rounded-circle img-fluid" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="Services" class="service-area bg-fefbf3">
+    <div class="container">
+        <div class="section-title">
+            <h5>Our Services</h5>
+            <h2>
+                We Work Many Fields to Clean Your Surrounding Area
+            </h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Living Room.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Make Better <span>Living Room</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Kitchen.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Your Beautiful <span>Kitchen</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Bathroom.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">Tidy <span>Bathroom</span></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-services-card">
+                    <div class="image">
+                        <img src="../../assets/Images/Bedroom.gif" alt="image">
+                    </div>
+                    <h3>
+                        <a href="#">The Perfect <span>Bedroom</span></a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="Bookus" class="container-fluid rounded mt-5 mb-5 book-us">
+    <div class="row">
+        <div class="col-md-5 ">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5 book-img">
+                <img class="rounded-circle mt-5" src="../../assets/Images/12.png">
+            </div>
+        </div>
+        <div class="col-md-7 book-box">
+            <div class="p-3 py-5">
+                <div class="book-title">
+                    <h1>Book Us</h1>
+                    <hr>
+                </div>
+                <h5>Contact Details</h5>
+                <form [formGroup]="Booking">
+                    <div class="row mt-5 form-group">
+                        <div class="col-md-6 ">
+                            <label class="labels">Name</label>
+                            <input type="text" class="form-control" formControlName="name"
+                                [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Name" value="">
+                            <div>
+                                <h6 *ngIf="f.name.touched && f.name.errors?.required" style="color:red">
+                                    *Name Required...!!!
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Email ID</label>
+                            <input type="text" class="form-control" formControlName="email"
+                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email ID">
+                            <div>
+                                <h6 *ngIf="f.email.touched && f.email.errors?.required" style="color:red">
+                                    *Email Required...!!!
+                                </h6>
+                                <h6 *ngIf="f.email.touched && f.email.errors?.pattern" style="color:red">
+                                    *Email Id Format is Required
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Phone Number</label>
+                            <input type="text" class="form-control" formControlName="phno"
+                                [ngClass]="{ 'is-invalid': submitted && f.phno.errors }"
+                                placeholder="Enter phone number" value="">
+                            <div>
+                                <h6 *ngIf="f.phno.touched && f.phno.errors?.required" style="color:red">
+                                    *Phone number Required...!!!
+                                </h6>
+                                <h6 *ngIf="f.phno.errors?.maxlength" style="color:red">
+                                    *Only 10 digits...!!!
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">City</label>
+                            <input type="text" class="form-control" formControlName="city"
+                                [ngClass]="{ 'is-invalid': submitted && f.city.errors }" placeholder="Enter city"
+                                value="">
+                            <div>
+                                <h6 *ngIf="f.city.touched && f.city.errors?.required" style="color:red">
+                                    *City is Required...!!!
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Zipcode</label>
+                            <input type="text" class="form-control" formControlName="zipcode"
+                                [ngClass]="{ 'is-invalid': submitted && f.zipcode.errors }" placeholder="Enter Zipcode"
+                                value="">
+                            <div>
+                                <h6 *ngIf="f.zipcode.touched && f.zipcode.errors?.required" style="color:red">
+                                    *Zipcode is Required...!!!
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Tell Us About Your Home!</h5>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label class="labels">Type of Service</label>
+                                <select class="form-control" formControlName="service"
+                                    [ngClass]="{ 'is-invalid': submitted && f.service.errors }"
+                                    [(ngModel)]="selectedServices.id">
+                                    <option value="0">-- Select Service --</option>
+                                    <option *ngFor="let ch of services?.services" [value]="ch.Price">{{ch.Name}}
+                                    </option>
+                                </select>
+                                <div>
+
+                                    <h6 *ngIf="f.service.touched && f.service.errors?.required" style="color:red">
+                                        *Service is Required...!!!
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="labels">Rooms</label>
+                                <input type="number" [(ngModel)]="rooms" class="form-control" formControlName="rooms"
+                                    [ngClass]="{ 'is-invalid': submitted && f.rooms.errors }" placeholder="Rooms"
+                                    value="">
+                                <div>
+                                    <h6 *ngIf="f.rooms.touched && f.rooms.errors?.required" style="color:red">
+                                        *Rooms is Required...!!!
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label class="labels">Square Feet</label>
+                                <input type="number" (change)="onSelect($event.target)" [(ngModel)]="sqft"
+                                    class="form-control" formControlName="sqft"
+                                    [ngClass]="{ 'is-invalid': submitted && f.sqft.errors }" placeholder="Square Feet"
+                                    value="">
+                                <div>
+                                    <h6 *ngIf="f.sqft.touched && f.sqft.errors?.required" style="color:red">
+                                        *Square feet is Required...!!!
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="labels">Book on</label>
+                                <input type="date" class="form-control" formControlName="bookon"
+                                    [ngClass]="{ 'is-invalid': submitted && f.bookon.errors }" placeholder="Book on">
+                                <div>
+                                    <h6 *ngIf="f.bookon.touched && f.bookon.errors?.required" style="color:red">
+                                        *Date is Required...!!!
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label class="labels">Standard Charges</label>
+                                <input type="number" class="form-control" formControlName="standardCharges"
+                                    [ngClass]="{ 'is-invalid': submitted && f.standardCharges.errors }"
+                                    placeholder="Standard Charges" value="{{selectedServices.id}}" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="labels">Total Price</label>
+                                <input type="number" class="form-control" formControlName="totalPrice"
+                                    value="{{this.total}}"
+                                    [ngClass]="{ 'is-invalid': submitted && f.totalPrice.errors }"
+                                    placeholder="Total Price" readonly>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary m-3 s-button" type="button" (click)="onSave()">Save</button>
+                                <button class="btn btn-primary m-3 s-button" type="button" (click)="onSubmit()">Submit</button>
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="contactUs" class="contact">
+    <div class="top-border left"></div>
+    <div class="top-border right"></div>
+    <h1>CONTACT US</h1>
+    <p>
+        <i class="fas fa-map-marked-alt"></i> Plot No.18, 3rd Floor, DDA Community Center, <br>
+       Okhla Industrial Area, Phase-I, Chennai - 600094 <br>
+       <i class="fas fa-at"></i> support@smcleanindia.com <br>
+       <i class="fas fa-phone-alt"></i> 011-6134-5555</p>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+</div>
+
+<div id="viewReport" class="Report">
+    <h1>REPORT</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th scope="col">NAME</th>
+                            <th scope="col">PHONE NUMBER</th>
+                            <th scope="col">CITY</th>
+                            <th scope="col">BOOKED ON</th>
+                            <th scope="col">TOTAL PRICE</th>
+                            <th scope="col">REQUEST NUMBER</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr *ngFor="let r of records">
+                            <td>{{r.name}}</td>
+                            <td>{{r.phno}}</td>
+                            <td>{{r.city}}</td>
+                            <td>{{r.bookon}}</td>
+                            <td>{{r.totalPrice}}</td>
+                            <td>{{r.reqNo}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+   
+ 
+   
+</div>
